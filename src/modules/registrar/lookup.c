@@ -617,6 +617,7 @@ int clear_ruri_branch(sip_msg_t *msg)
 	set_ruri_q(Q_UNSPECIFIED);
 	reset_force_socket(msg);
 	setbflagsval(0, 0);
+	msg->instance.s = 0;
 	msg->instance.len = 0;
 	msg->reg_id = 0;
 	msg->ruid.s = 0;
